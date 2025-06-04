@@ -21,6 +21,7 @@ class DatabaseSeeder extends Seeder
             MaintenanceSeeder::class,
             ProjectSeeder::class,
             MachineProjectSeeder::class,
+            ParametersSeeder::class,
         ]);
 
         // \App\Models\User::factory(10)->create();
