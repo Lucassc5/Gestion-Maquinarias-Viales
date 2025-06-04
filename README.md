@@ -74,21 +74,27 @@ Herd ya incluye PHP, Composer. Ideal para entornos Laravel.
 
 1. Clonar el repositorio:
    
-   git clone https://github.com/Lucassc5/Gestion-Maquinarias-Viales.git
-   cd Gestion-Maquinarias-Viales
-
+       cd Gestion-Maquinarias-Viales
+       git clone https://github.com/Lucassc5/Gestion-Maquinarias-Viales.git
 
     Instalación de librerias:
    
-1- composer install
-npm install && npm run dev
+1- 
+    
+    composer install
+    npm install && npm run dev
 
-2- cp .env.example .env
+2- 
+    
+    cp .env.example .env
 
-3- php artisan key:generate
+3- 
+
+    php artisan key:generate
 
 4- Primero se debe configurar la base de datos en .env y ejecutar comando:
-   php artisan migrate --seed
+   
+    php artisan migrate --seed
 
 5-Recorda escribir en la consola:
     
