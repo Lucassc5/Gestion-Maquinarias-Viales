@@ -10,7 +10,7 @@ class ProjectController extends Controller
 {
     public function show(){
         $projects = Projects::with('province')->paginate(5);
-        return view('projects.Reed', compact('projects'));
+        return view('projects.Read', compact('projects'));
     }
 
     public function create(){

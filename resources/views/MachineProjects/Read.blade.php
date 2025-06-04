@@ -21,9 +21,7 @@
                             <tr>
                                 <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">ID</th>
                                 <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">Fecha de Inicio</th>
-                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">Fecha de Fin</th>
-                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">Razon de Fin</th>
-                                <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">Kilometros</th>
+                                
                                 <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">Nombre del Proyecto</th>
                                 <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">Provincia</th>
                                 <th class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">Tipos de Maquinas</th>
@@ -35,11 +33,7 @@
                                 <tr>
                                     <td class="px-6 py-4 whitespace-nowrap">{{ $project->id }}</td>
                                     <td class="px-6 py-4 whitespace-nowrap">{{ $project->start_date }}</td>
-                                    <td class="px-6 py-4 whitespace-nowrap">{{ $project->end_date }}</td>
-                                    <td class="px-6 py-4 whitespace-nowrap">
-                                        {{ $project->reason ? $project->reason->name_reason : '' }}
-                                    </td>
-                                    <td class="px-6 py-4 whitespace-nowrap">{{ $project->kilometers }}</td>
+                                    
                                     <td class="px-6 py-4 whitespace-nowrap">{{ $project->project->project_name }}</td>
                                     <td class="px-6 py-4 whitespace-nowrap">{{ $project->project->province->province_name }}</td>
                                     <td class="px-6 py-4 whitespace-nowrap">{{ $project->machine->serial_number }}</td>

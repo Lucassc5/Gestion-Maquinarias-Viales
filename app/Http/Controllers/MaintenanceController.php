@@ -14,7 +14,7 @@ class MaintenanceController extends Controller
     {
         $maintenance = Maintenance::with('machine')->paginate(5);
         $machines = Machine::All();
-        return view('maintenance.Reed', compact('maintenance', 'machines'));
+        return view('maintenance.Read', compact('maintenance', 'machines'));
     }
 
     public function create()

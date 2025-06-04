@@ -22,7 +22,7 @@ class MachineProjectController extends Controller
     $assignedMachines = MachineProjects::with('machine', 'project.province', 'reason')->whereNull('end_date')->paginate(10, ['*'], 'assigned');
     $unassignedMachines = MachineProjects::with('machine', 'project.province', 'reason')->whereNotNull('end_date')->paginate(10, ['*'], 'unassigned');
 
-        return view('machineProjects.Reed', compact('assignedMachines', 'unassignedMachines'));
+        return view('machineProjects.Read', compact('assignedMachines', 'unassignedMachines'));
     }
     
     public function create(){

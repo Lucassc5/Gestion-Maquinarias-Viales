@@ -15,7 +15,7 @@ class MachineController extends Controller
     public function show()
     {
         $machine = Machine::With('type')->paginate(5);
-        return view('machines.reed', compact('machine'));
+        return view('machines.Read', compact('machine'));
     }
 
     public function create()

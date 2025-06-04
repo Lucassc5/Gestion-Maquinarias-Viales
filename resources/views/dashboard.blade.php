@@ -18,7 +18,8 @@
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 text-gray-900 dark:text-gray-100">
-                    {{ __("Descripcion del sistema") }}
+                    <h1>{{ __("Descripcion del sistema") }}</h1>
+                    <p>Sistema web desarrollado con Laravel para la gestión de maquinaria vial. Permite administrar máquinas, asignarlas a proyectos, registrar mantenimientos, calcular kilómetros recorridos y generar alertas automáticas cuando una máquina supera cierto límite de uso.</p>
                 </div>
             </div>
         </div>
