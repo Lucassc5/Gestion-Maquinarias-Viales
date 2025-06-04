@@ -90,6 +90,12 @@ npm install && npm run dev
 4- Primero se debe configurar la base de datos en .env y ejecutar comando:
    php artisan migrate --seed
 
-5- Abrir el proyecto desde: Herd -> Sites -> URL
+5-Recorda escribir en la consola:
+    
+    npm run dev
+    
+Esto habilitará los estilos de Tailwind.
+
+6- Abrir el proyecto desde: Herd -> Sites -> URL
    Y esta listo para usar.
 
